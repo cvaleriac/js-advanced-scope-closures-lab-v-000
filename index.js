@@ -1,9 +1,9 @@
 function produceDrivingRange(blockRange) {
   return function(startBlock, endblock) {
-  let start = parsInt(startBlock);
-  let end = parsInt(endblock)
+  let sb = parsInt(startBlock);
+  let eb = parsInt(endblock);
   let result = 0;
-      start>=end ? result = start - end : result = start - end
+      sb>=eb ? result = sb - eb : result = sb - eb
       if (result <= blockRange) {
           return `within range by ${blockRange - result}`;
       } else {
