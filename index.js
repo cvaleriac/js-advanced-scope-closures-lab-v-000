@@ -8,7 +8,7 @@ function produceDrivingRange(blockRange) {
           return `within range by ${blockRange - result}`;
       } else {
           return `${result - blockRange} blocks out of range`;
-      }  
+      }
   }
 }
 
@@ -27,4 +27,3 @@ function createDriver() {
       }
   }
 }
-  
